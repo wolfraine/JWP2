@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Teacher</title>
+</head>
+<body>
+    <h1>Add Teacher</h1>
+    <form method="post">
+        Username: <input type="text" name=  "username"><br>
+        Subject: <input type="text" name="subject"><br>
+        Time: <input type="time" name="time"><br>
+        <input type="submit" value="Add">
+    </form>
+    <br>
+<form action="{{ url_for('index') }}" method="get" style="display:inline;">
+    <button type="submit">Back to list</button>
+</form>
+
+</body>
+</html>
